@@ -1,7 +1,5 @@
 # Webcam Setup System
 
-Dự án này triển khai một hệ thống quản lý Camera sử dụng Python, OpenCV và FastAPI, hỗ trợ đồng bộ dữ liệu với các thiết bị ngoại vi như ESP32.
-
 ## I. Tổng quan kiến trúc
 *   **CameraConfig** → Cấu hình khởi tạo (Resolution, FPS, Index).
 *   **CameraInfo** → Đối tượng dữ liệu (DTO) chứa kết quả sau khi quét thiết bị.
