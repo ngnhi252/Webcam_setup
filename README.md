@@ -47,7 +47,7 @@
 | Method | Endpoint | Mô tả | Request Body | Response thành công | Ghi chú |
 |--------|----------|-------|--------------|---------------------|---------|
 | GET | `/camera/scan` | Quét camera khả dụng | — | `{ "cameras": [{ "index": 0, "name": "Camera 0 (built-in)", "width": 640, "height": 480, "fps": 30 }] }` | Lấy `index` từ đây để dùng cho `/camera/connect` |
-| POST | `/camera/connect` | Kết nối camera | `{ "device_index": 0 }` | `{ "connected": true, "device_index": 0 }` | Gọi sau khi chọn camera từ kết quả scan |
+| POST | `/camera/connect` | Kết nối camera | `{ "device_index": 0 }` | `{ "connected": true, "device_index": 0 }` | Tự ngắt camera cũ trước khi kết nối |
 | POST | `/camera/stream/start` | Bật stream | — | `{ "streaming": true }` | Gọi trước khi hiển thị live feed |
 | POST | `/camera/stream/stop` | Tắt stream | — | `{ "streaming": false }` | — |
 | GET | `/camera/stream` | Live feed MJPEG | — | MJPEG stream | Dùng trực tiếp làm `src` của thẻ `<img>`, không cần fetch |
